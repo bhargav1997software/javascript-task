@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container register-form">
+            <div class="form">
+                <div class="note">
+                    <p>Registration Form</p>
+                </div>
+
+                <div class="form-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form name='registrationtask' type="submit" onSubmit="return formvalidation()" method="post"></form>
+                            <div class="form-group">
+                                
+                                <input type="text" class="form-control" placeholder="Your FirstName *" id="FirstName" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your LastName *" id="LastName" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="PhoneNumber *" id="PhoneNumber" value=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="UserName *" id="UserName" value=""/>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email *" id="Email" value=""/>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Your Password *" id="Password" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password *" id="confirmPassword" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" class="form-control" placeholder="Date Of Birth *" name="DOB" id="Date Of Birth"/>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btnSubmit" onclick="formvalidation()">Register</button>
+                </div>
+            </div>
+          </div>
+        
+</body>
+<script src="./jquery-3.4.1.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./registrationtask.js"></script>
+</html>
