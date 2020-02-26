@@ -27,7 +27,7 @@
     border:none;
     border-radius:1.5rem;
     padding: 1%;
-    width: 20%;
+    display: inline-block;
     cursor: pointer;
     background: #0062cc;
     color: #fff;
