@@ -121,4 +121,8 @@ function checkEmail() {
         // t.focus;
     }
     return html;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7a11ede19b98ada4020b5c54e1b374d84f3b1649
