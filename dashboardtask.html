@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboardtask.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Techminds</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="logintask.html"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        
+      <div class="container-fluid text-center">
+
+       <div class="container register-form">
+        <div class="form">
+            <div class="note">
+                <p>Tickets Lists</p>
+            </div>
+
+            <div class="form-content">
+                <div class="row">
+                  
+                    <div class="col-md-6">
+                        <form name='tickettask' type="submit" onSubmit="return dashboardvalidation()" method="post">
+                        </form>
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Title *" id="title"
+                                value="" />
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" class="form-control" placeholder="Description" id="Description"
+                                value=""></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Status *" id="Status"
+                                value="" />
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+
+                        <div class="form-group" style="width: 416px;">
+                          <input list="username" name="username" placeholder="username " id="user">
+                          <datalist id="username">
+                            <option value="laddu">
+                            <option value="motu">
+                            <option value="chotu">
+                            <option value="bhagi">
+                            <option value="playboy">
+                          </datalist>
+                        </div>
+                        <div class="form-group">
+                          <input type="date" class="form-control"  id="cdate"/>
+                        </div>
+                        
+                        <div class="form-group">
+                          <input type="date" class="form-control"  id="Mdate"/>
+                        </div>
+                        <div class="form-group" style="width: 416px;">
+                          <input list="username" name="Modified username" placeholder="Modified By " id="muser">
+                          <datalist id="username">
+                            <option value="laddu">
+                            <option value="motu">
+                            <option value="chotu">
+                            <option value="bhagi">
+                            <option value="playboy">
+                          </datalist>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btnSubmit" onclick="dashboardvalidation()">Ticket raise</button>
+            </div>
+        </div>
+    </div>
+      
+      <footer class="container-fluid text-center">
+        <p>Footer Text</p>
+      </footer>
+    
+</body>
+</html>

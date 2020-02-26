@@ -7,6 +7,12 @@
     font-weight: bold;
     line-height: 80px;
 }
+#error-message{
+    color:red;
+}
+#success-message{
+    color:green;
+}
 .form-content
 {
     padding: 10%;
