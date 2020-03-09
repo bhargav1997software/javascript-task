@@ -89,7 +89,7 @@ if (ticketData) {
 <td>${item.Description}</td>
 <td>${item.status}</td>
 <td>${item.user}</td>
-<td><button type="button" style="padding:10px;border-radius:0px;" class="btnSubmit" onclick="ticketvalidation(${item.index})">Edit</button></td>
+<td><button type="button" style="padding:10px;border-radius:0px;" class="btnSubmit" onclick="ticketvalidation(${index})">Edit</button></td>
 </tr>`
     });
     document.getElementById("append-data").innerHTML = html;
@@ -113,50 +113,31 @@ function ticketvalidation(id) {
         document.getElementById("title").value = x;
         document.getElementById("Description").value = y;
         document.getElementById("status").value = z;
+        document.getElementById("indexstriing").value = id;
 
 
 }
 function updatevalidation() {
     console.log('hii');
-    var x = document.getElementById("title").innerHTML;
-
-    var y = document.getElementById("Description").innerHTML;
-    var z = document.getElementById("status").innerHTML;
-    console.log('hiiii', z);
-    var u = document.getElementById("user").innerHTML;
-    var html = '<ul>';
+    var x = document.getElementById("title").value;
+    var y = document.getElementById("Description").value;
+    var z = document.getElementById("status").value;
+    var d = document.getElementById("indexstriing").value;
+    var u = document.getElementById("user").value;
 
 
-    let updateobject = {};
-    if (html.trim() == '<ul>') {
-        updateobject["title"] = x;
-        updateobject["Description"] = y;
-        updateobject["status"] = z;
-        updateobject["user"] = u;
-        updateobject["createdDate"] = new Date();
-        updateobject["modifiedDate"] = new Date();
-        if (!localStorage.getItem("updateData")) {
-            var updateArray = [];
-            updateArray.push(updateobject)
-            localStorage.setItem("updateData", JSON.stringify(updateArray))
-        }
-        let updateData = JSON.parse(localStorage.getItem("updateData"));
-        updateobject["id"] = updateData.length;
-        if (updateData && Array.isArray(updateData)) {
-            updateData.push(updateobject)
-            localStorage.setItem("updateData", JSON.stringify(updateData))
-        }
+    let ticketobject = {};
+    ticketobject["title"] = x;
+    ticketobject["Description"] = y;
+    ticketobject["status"] = z;
+    ticketobject["user"] = u;
+    ticketobject["createdDate"] = new Date();
+    ticketobject["modifiedDate"] = new Date();
 
-        console.log('updateobject', updateobject);
-        console.log('updateobject', updateobject);
-        var data2 = localStorage.getItem("updateData");
-        var updateArray = JSON.parse(data2);
-        console.log('ticket--->', updateArray);
-
-
-
-
-
-    }
+  var data1 = localStorage.getItem("ticketData");
+    var ticket1Array = JSON.parse(data1);
+    ticket1Array[d]= ticketobject;
+    localStorage.setItem("ticketData", JSON.stringify(ticket1Array));
+    window.location.reload();
 
 }
