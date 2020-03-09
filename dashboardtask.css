@@ -24,6 +24,15 @@
       border-radius:1.5rem;
       
 }
+#status{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 440px;
+    height: 31px;
+
+}
 #user{
     padding-top: 6px;
     padding-bottom: 6px;
@@ -40,16 +49,25 @@
     width: 440px;
     height: 31px;
 }
+#ticket{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 440px;
+    height: 31px;
+}
   .btnSubmit
   {
       border:none;
       border-radius:1.5rem;
       padding: 1%;
-      width: 20%;
+      display: inline-block;
       cursor: pointer;
       background: #0062cc;
       color: #fff;
   }
+ 
  
   footer {
     position: fixed;

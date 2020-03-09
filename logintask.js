@@ -25,27 +25,15 @@ console.log(userArray);
            
             if(x==userArray[i].username && y==userArray[i].password){
                 document.getElementById('success-message').innerHTML = '<p>Successfully Login!!!</p>';
-              
-                window.location.href = "http://127.0.0.1:5500/dashboardtask.html";
+             
+               window.location.assign("dashboardtask.html");;
             }
-        
-            else{
+       
+            else if(x==userArray[i].username && y!=userArray[i].password){
                 document.getElementById('error-message').innerHTML = '<p>Invalid password or username!!!</p>'
             }
             
-            break;
-            
-        //     else{
-                
-
-               
-        //       if  (x!=userArray[i].username && y!=userArray[i].password){
-        //         document.getElementById('error-message').innerHTML = '<p>Invalid Username or password!!!</p>';
-        //         break;
-            
-        //     }
-
-        // }
+       
         }
         
     }
@@ -87,5 +75,6 @@ function pwdvalid(y) {
 
         return html;
     }
+    
 }
 

@@ -65,21 +65,21 @@ function formvalidation() {
 
     
 }
-function fName() {
+function lName() {
     var html = '';
-    var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    var regName = /[a-z A-Z]{3,30}$/;;
     y = document.getElementById('LastName').value;
     if (!regName.test(y)) {
-        html += '<li>Invalid name given.</li>';
+        html += '<li>Invalid lname given.</li>';
     }
     return html;
 }
-function lName() {
+function fName() {
     var html = '';
-    var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    var regName = /[a-z A-Z]{3,30}$/;;
     var x = document.getElementById('FirstName').value;
     if (!regName.test(x)) {
-        html += '<li>Invalid name given.</li>';
+        html += '<li>Invalid fname given.</li>';
     }
     return html;
 }
@@ -121,8 +121,4 @@ function checkEmail() {
         // t.focus;
     }
     return html;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 7a11ede19b98ada4020b5c54e1b374d84f3b1649
