@@ -10,7 +10,7 @@
    
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #FFC1CB;">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -37,7 +37,7 @@
         
       <div class="container-fluid text-center">
 
-       <div class="container register-form">
+       <!-- <div class="container register-form"> -->
         <div class="form">
           <form name='tickettask' type="submit" onSubmit="return dashboardvalidation()" method="post"></form>
             <div class="note">
@@ -78,16 +78,7 @@
                         </datalist>
                       </div>
                           <input type="hidden" id="indexstriing" />
-                        <div class="form-group" style="width: 416px;">
-                          <input list="username" name="username" placeholder="username " id="user">
-                          <datalist id="username">
-                            <option value="laddu">
-                            <option value="motu">
-                            <option value="chotu">
-                            <option value="bhagi">
-                            <option value="playboy">
-                          </datalist>
-                        </div>
+                        
                     </div>
                 </div>
                 <button type="button" class="btnSubmit" onclick="dashboardvalidation()">Raise Ticket</button>
@@ -104,8 +95,7 @@
                       <th scope="col">Action</th>
                       
                     </tr>
-                    
-
+                  
                   </thead>
                   <tbody id="append-data">
                   
@@ -115,7 +105,7 @@
             </div>
             
         </div>
-    </div>
+    <!-- </div> -->
       
       <footer class="container-fluid text-center">
         <p>Footer Text</p>

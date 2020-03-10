@@ -73,8 +73,6 @@ function Description() {
     return html;
 }
 
-debugger;
-
 var data = localStorage.getItem("userData");
 var jsonArray = JSON.parse(data);
 console.log(jsonArray);
@@ -100,7 +98,6 @@ document.getElementById('username').innerHTML = options;
 
 console.log(document.getElementById('username').innerHTML)
 
-debugger;
 function ticketvalidation(id) {
 
     var data1 = localStorage.getItem("ticketData");

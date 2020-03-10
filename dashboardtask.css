@@ -6,9 +6,10 @@
   
   .note
   {
+      
       text-align: center;
       height: 80px;
-      background: -webkit-linear-gradient(left, #6495ED, #000080);
+      background: -webkit-linear-gradient(left, #4A8DDC,#374649);
       color: #fff;
       font-weight: bold;
       line-height: 80px;
@@ -16,8 +17,8 @@
  
   .form-content
   {
-      padding: 10%;
-      border: 1px solid #90EE90;
+      padding-top: 3%;
+      border: 1px solid #374649;
       margin-bottom: 2%;
   }
   .form-control{
@@ -41,14 +42,7 @@
     width: 440px;
     height: 31px;
 }
-#muser{
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 440px;
-    height: 31px;
-}
+
 #ticket{
     padding-top: 6px;
     padding-bottom: 6px;
