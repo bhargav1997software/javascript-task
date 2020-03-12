@@ -87,7 +87,7 @@ if (ticketData) {
 <td>${item.Description}</td>
 <td>${item.status}</td>
 <td>${item.user}</td>
-<td><button type="button" style="padding:10px;border-radius:0px;" class="btnSubmit" onclick="ticketvalidation(${index})">Edit</button></td>
+<td><button type="button" class="btn btn-default" onclick="ticketvalidation(${index})">Edit</button></td>
 </tr>`
     });
     document.getElementById("append-data").innerHTML = html;

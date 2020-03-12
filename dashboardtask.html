@@ -10,7 +10,7 @@
    
     <title>Document</title>
 </head>
-<body style="background-color: #FFC1CB;">
+<body style="background-color: #f5f5f5;">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -19,7 +19,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>                        
             </button>
-            <a class="navbar-brand" href="#">Techminds</a>
+            <a href="#"><img src="tg.png" width="50px" height="50px" ></img></a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -81,8 +81,8 @@
                         
                     </div>
                 </div>
-                <button type="button" class="btnSubmit" onclick="dashboardvalidation()">Raise Ticket</button>
-                <button type="button" class="btnSubmit" onclick="updatevalidation()">Update</button>
+                <button type="button" class="btn btn-primary btn-lg" class="btnSubmit" onclick="dashboardvalidation()">Raise Ticket</button>
+                <button type="button" class="btn btn-success btn-lg" class="btnSubmit" onclick="updatevalidation()">Update</button>
 
 
                 <table class="table" style="width: 100%;text-align: left;">
@@ -108,7 +108,10 @@
     <!-- </div> -->
       
       <footer class="container-fluid text-center">
-        <p>Footer Text</p>
+        <p id="demo"></p>
+        <p>Techminds Group Pvt Ltd. <script>var d = new Date()
+        document.getElementById("demo").innerHTML=d;</script></p>
+        
       </footer>
     
 </body>

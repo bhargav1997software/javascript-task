@@ -17,7 +17,7 @@
  
   .form-content
   {
-      padding-top: 3%;
+      padding: 18px;
       border: 1px solid #374649;
       margin-bottom: 2%;
   }
@@ -62,7 +62,12 @@
       color: #fff;
   }
  
- 
+ .note p {
+    font-size: 23px;
+    font-weight: 500;
+    font-family: sans-serif;
+    
+ }
   footer {
     position: fixed;
     padding: 15px;
